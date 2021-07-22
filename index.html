@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>INDIAN STORES</title>
+        <link href="{% static 'homepagecss.css' %}" rel="stylesheet">
+      	<link rel="icon" href="{% static 'favicon-32x32.png' %} " type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+<body>
+
+<div class="header">
+<h1>Indian Store</h1>
+</div>
+
+<div class="topnav">
+   <a class="active" >Home</a>
+  <a href="{% url 'serv' %}" target="_blank">Services</a>
+  <a href="{% url 'contact' %}" target="_blank">Contact</a>
+  <a href="{% url 'aboutus' %}" target="_blank">About Us</a>
+</div>
+
+<div class="row">
+<div class="column">
+<a href="{% url 'categories_list' %}" target="col">
+<div class="icon"> </div> <div class="icon"> </div> <div class="icon"> </div> </a>
+<h3><center style="font-family:Courier New;">Click on this icon to view the categories</center></h3>
+  <iframe name="col" src="" frameBorder="0"> </iframe>
+</div>
+
+
+  <div class="column1">
+  <marquee><b>Due to covid-19 5% offers on online shopping</b></marquee>
+<center>
+<b> Buy Indian Product support Indians
+<p> We Provide coupons, Discounts to the Every User.</p>
+<p> Visit Us Daily </p> </b>
+<img class="img1" src="{% static 'deepak.jpg' %}">
+</center>
+</div>
+
+  <div class="column">
+<h2 ><b><center>Log In</center></b><h2>
+<center >
+<a href="{%  url 'signin'  %}" target="_blank"/>
+<button > Sign In </button>
+</a>
+</center>
+<center>
+<a href="{% url 'signup' %}" target="_blank"/>
+<button> Sign Up </button> </a>
+</center>
+</div>
+</div>
+
+<marquee><font ></font></marquee>
+
+<div class="flex-container">
+  <div class="container"> MOBILE <a href="{% url 'mobile' %}" target="_top"> <img class="img2" src="{% static 'encyclopedia/img2.jpg' %}" ></a></div>
+  <div class="container"> FURNITURES <a href="{% url 'furniture' %}" target="_top"><img class="img2" src="{% static 'encyclopedia/img3.jpg' %}"></a></div>
+  <div class="container"> SNACKS <a href="{% url 'snack' %}" target="_top"><img class="img2" src="{% static 'encyclopedia/img5.jpg' %}"></a></div>
+  <div class="container"> GROCERY <a href="{% url 'grocery' %}" target="_top"><img class="img2" src="{% static 'encyclopedia/image1.jpg' %}"></a></div>
+  <div class="container"> FASHION <a href="{% url 'fashion' %}" target="_top"><img class="img2" src="{% static 'encyclopedia/image3.jpg' %}"></a></div>
+  <div class="container"> TABS <a href="{% url 'tab' %}" target="_top"><img class="img2" src="{% static 'encyclopedia/img4.jpg' %}"></a></div>
+  </div>
+
+<div style="background-color:#e5e5e5; font-weight: bold; text-align:center; padding:10px; margin-top:7px; ">&copy;
+ copyright 2021</div>
+
+
+</body>
+</html>
